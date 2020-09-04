@@ -1,0 +1,64 @@
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+% Personal Resume
+% Author: Storm_FireFox1
+%
+% This template has been downloaded from:
+% https://github.com/posquit0/Awesome-CV
+%
+% Template license:
+% CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
+
+
+% Set template as document class
+\documentclass[11pt, letterpaper]{awesome-cv}
+\geometry{left=1.4cm, top=.8cm, right=1.4cm, bottom=1.8cm, footskip=.5cm}
+\fontdir[fonts/]
+
+% Template configuration
+\colorlet{awesome}{awesome-red}
+\setbool{acvSectionColorHighlight}{false}
+
+%-------------------------------------------------------------------------------
+%	PERSONAL INFORMATION
+%	Comment any of the lines below if they are not required
+%-------------------------------------------------------------------------------
+% Available options: circle|rectangle,edge/noedge,left/right
+% \photo[rectangle,edge,right]{./examples/profile}
+\name{Matei-Alexandru}{Gardus}
+\position{Software Engineer{\enskip\cdotp\enskip}DevOps Consultant}
+\address{9500 Gilman Drive, La Jolla, California 92091}
+
+\mobile{(310) 634-7520}
+\email{matei@gard.us}
+\homepage{stormhub.io}
+\github{StormFireFox1}
+\linkedin{StormFireFox1}
+% \gitlab{gitlab-id}
+% \stackoverflow{SO-id}{SO-name}
+\twitter{@Storm\_FireFox1}
+% \skype{skype-id}
+% \reddit{reddit-id}
+% \medium{madium-id}
+% \googlescholar{googlescholar-id}{name-to-display}
+%% \firstname and \lastname will be used
+% \googlescholar{googlescholar-id}{}
+% \extrainfo{extra informations}
+
+\begin{document}
+\makecvheader[C]
+\makecvfooter
+  {\today}
+  {}
+  {\thepage}
+
+% Actual content
+% \input{content/summary.tex}
+\input{content/education.tex}
+\input{content/experience.tex}
+\input{content/projects.tex}
+\input{content/speaking.tex}
+\input{content/writing.tex}
+\input{content/honors.tex}
+\input{content/courses.tex}
+\end{document}
