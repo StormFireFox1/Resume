@@ -6,3 +6,10 @@
 Here you will find the personal resume for me, Matei-Alexandru Gardus.
 
 My resume uses the [[https://github.com/posquit0/Awesome-CV][Awesome-CV]] framework for its design.
+
+To compile, use:
+#+BEGIN_SRC bash
+xelatex resume.tex
+#+END_SRC
+
+TeX Live must be installed to be able to compile the resume.
