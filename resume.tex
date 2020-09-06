@@ -13,7 +13,7 @@
 % Set template as document class
 \documentclass[12pt, letterpaper]{awesome-cv}
 \renewcommand{\acvSectionTopSkip}{0mm}
-\geometry{left=1.4cm, top=.8cm, right=1.4cm, bottom=1.8cm, footskip=.5cm}
+\geometry{left=1.4cm, top=.5cm, right=1.4cm, bottom=.8cm, footskip=.5cm}
 \fontdir[fonts/]
 
 % Template configuration
@@ -45,12 +45,27 @@
 % \googlescholar{googlescholar-id}{}
 % \extrainfo{extra informations}
 
+% Reimplementations of functions defined in awesome-cv.cls
+
+% make first and last name text the same
+\renewcommand{\headerfirstnamestyle}[1]{{\fontsize{20pt}{1em}\headerfontlight\color{text} #1}}
+\renewcommand{\headerlastnamestyle}[1]{{\fontsize{20pt}{1em}\headerfont\bfseries\color{text} #1}}
+
+% make header section text smaller (sizes down to 14 work well, but sticking with 16 for now)
+\renewcommand{\sectionstyle}[1]{{\fontsize{16pt}{1em}\bodyfont\bfseries\color{text} #1}}
+
+% make breaks between sections smaller
+\renewcommand{\acvSectionTopSkip}{-1mm}
+\renewcommand{\acvSectionContentTopSkip}{1mm}
+
+% make locations black
+\renewcommand{\entrylocationstyle}[1]{{\fontsize{9pt}{1em}\bodyfontlight\slshape\color{text} #1}}
+
+% larger social media/contact font
+\renewcommand{\headersocialstyle}[1]{{\fontsize{9pt}{1em}\headerfont\color{text} #1}}
+
 \begin{document}
 \makecvheader[C]
-\makecvfooter
-  {\today}
-  {}
-  {\thepage}
 
 % Actual content
 % \input{content/summary.tex}
