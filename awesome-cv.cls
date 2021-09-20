@@ -1,1 +1,1 @@
-/home/ghost/Repos/github.com/posquit0/Awesome-CV/awesome-cv.cls
+Awesome-CV/awesome-cv.cls
